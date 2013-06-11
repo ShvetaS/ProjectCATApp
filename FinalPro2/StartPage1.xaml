@@ -1,0 +1,133 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="FinalPro2.StartPage1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <!--Pivot Control-->
+       
+        <controls:Pivot Title="CATApp" FontSize="50">
+            <!--Pivot item one-->
+            <controls:PivotItem Header="Home">
+                <Grid Background="{x:Null}" Width="448" Height="562">
+                    <Border BorderBrush="Silver" BorderThickness="2" Height="564" HorizontalAlignment="Left" Margin="0,-10,0,0" Name="border2" VerticalAlignment="Top" Width="442" />
+                    <Button Name="btn_taketest" HorizontalAlignment="Left" Margin="71,20,0,416" Width="136" Foreground="White" Cursor="Stylus" Click="btn_taketest_Click" Height="131" BorderThickness="0">
+                        <Button.OpacityMask>
+                            <ImageBrush />
+                        </Button.OpacityMask>
+                        <Button.Background>
+                            <ImageBrush ImageSource="/FinalPro2;component/Images/take_test_blue.png" />
+                        </Button.Background>
+                    </Button>
+                    <Button Height="131" HorizontalAlignment="Left" Margin="268,19,0,0" Name="btn_progress" VerticalAlignment="Top" Width="132" BorderThickness="0" Click="btn_progress_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/FinalPro2;component/Images/progress_blue.png" />
+                        </Button.Background>
+                    </Button>
+                    <TextBlock Height="48" HorizontalAlignment="Left" Margin="53,152,0,0" Name="textBlock1" Text="Take Test" FontSize="30" VerticalAlignment="Top" Width="141" />
+                    <TextBlock Height="62" HorizontalAlignment="Left" Margin="228,158,0,0" Name="textBlock2" Text="Progress Report" VerticalAlignment="Top" Width="218" FontSize="30"/>
+                    <Button Height="126" HorizontalAlignment="Left" Margin="62,205,0,0" Name="btn_solution" VerticalAlignment="Top" Width="138" BorderThickness="0" Click="btn_solution_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/FinalPro2;component/Images/solution_blue.png" />
+                        </Button.Background>
+                    </Button>
+                    <Button Height="128" HorizontalAlignment="Left" Margin="259,218,0,0" Name="btn_help" VerticalAlignment="Top" Width="124" BorderThickness="0" Click="btn_help_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/FinalPro2;component/Images/help_blue.png" />
+                        </Button.Background>
+                    </Button>
+                    <TextBlock Height="40" HorizontalAlignment="Left" Margin="64,337,0,0" Name="textBlock4" Text="Solution" VerticalAlignment="Top" FontSize="30" Width="130" />
+                    <TextBlock Height="46" HorizontalAlignment="Left" Margin="281,343,0,0" Name="textBlock5" Text="Help" VerticalAlignment="Top" FontSize="30" Width="130" />
+                    <Button Height="126" HorizontalAlignment="Left" Margin="63,0,0,54" Name="btn_settings" VerticalAlignment="Bottom" Width="132" BorderThickness="0" Click="btn_settings_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/FinalPro2;component/Images/setting_blue.png" />
+                        </Button.Background>
+                    </Button>
+                    <Button Height="116" HorizontalAlignment="Left" Margin="262,396,0,0" Name="btn_likeus" VerticalAlignment="Top" Width="132" BorderThickness="0" FontFamily="Tahoma" Click="btn_likeus_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/FinalPro2;component/Images/likefb_blue.png" Stretch="Fill" />
+                        </Button.Background>
+                    </Button>
+                    <TextBlock Height="42" FontSize="30" HorizontalAlignment="Left" Margin="60,0,0,22" Name="textBlock6" Text="Settings" VerticalAlignment="Bottom" Width="126" />
+                    <TextBlock Height="40" FontSize="30" HorizontalAlignment="Right" Margin="0,511,74,0" Name="textBlock7" Text="Like Us" VerticalAlignment="Top" Width="113" />
+                </Grid>
+               
+                
+            </controls:PivotItem>
+
+            <!--Pivot item two-->
+            <controls:PivotItem Header="More">
+                 <Grid>
+                    <Border BorderBrush="Silver" BorderThickness="2" Height="568" HorizontalAlignment="Left" Margin="-12,-10,0,0" Name="border3" VerticalAlignment="Top" Width="458" />
+                    <Button Height="125" HorizontalAlignment="Left" Margin="38,22,0,0" Name="CATNews" VerticalAlignment="Top" Width="141" BorderThickness="0" FontFamily="Tahoma" Click="CATNews_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/FinalPro2;component/Images/news_blue.png" Stretch="Fill" />
+                        </Button.Background>
+                    </Button>
+                    <Button Height="123" HorizontalAlignment="Left" Margin="36,182,0,0" Name="ToppersSay" VerticalAlignment="Top" Width="145" BorderThickness="0" FontFamily="Tahoma" Click="ToppersSay_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/FinalPro2;component/Images/toppersay_blue.png" Stretch="Fill" />
+                        </Button.Background>
+                    </Button>
+                    <Button Height="125" HorizontalAlignment="Left" Margin="34,318,0,0" Name="QuestionADay" VerticalAlignment="Top" Width="145" BorderThickness="0" FontFamily="Tahoma" Click="QuestionADay_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/FinalPro2;component/Images/queaday_blue.png" Stretch="Fill" />
+                        </Button.Background>
+                    </Button>
+                    <TextBlock Height="74" HorizontalAlignment="Left" Margin="194,51,0,0" Name="textCATNews" Text="CAT News" VerticalAlignment="Top" Width="190" FontSize="40" />
+                    <TextBlock Height="74" HorizontalAlignment="Left" Margin="194,205,0,0" Name="textToppersSay" Text="Toppers Say" VerticalAlignment="Top" Width="220" FontSize="40"  />
+                    <TextBlock Height="108" HorizontalAlignment="Left" Margin="190,326,0,0" Name="textQueDay" Text="Question-A-Day" VerticalAlignment="Top" Width="190" FontSize="40" TextWrapping="Wrap" />
+                </Grid>
+               
+
+            </controls:PivotItem>
+            <!--Pivot item three-->
+            <controls:PivotItem Header="About">
+                <Grid>
+                    
+                    <Grid.RowDefinitions>
+                        <RowDefinition MaxHeight="100" Height="88" />
+                        <RowDefinition Height="69" />
+                        <RowDefinition Height="61" />
+                        <RowDefinition Height="201" />
+                        <RowDefinition Height="79" />
+                        <RowDefinition Height="69*" />
+                    </Grid.RowDefinitions>
+                    <TextBlock Height="64"  TextWrapping="Wrap" HorizontalAlignment="Left" Margin="62,22,0,0" Name="textBlock3" Text="Brought to you by" VerticalAlignment="Top" FontSize="40" Width="372" />
+                    <Image Height="149" HorizontalAlignment="Left" Margin="135,14,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="176" Grid.Row="1" Source="/FinalPro2;component/Images/catapplogoabout.png" Grid.RowSpan="3" />
+                    <!--<TextBlock Height="40" FontSize="32" HorizontalAlignment="Left" Margin="159,49,0,0" Name="textBlock8" Text="catapp.in" VerticalAlignment="Top" Grid.Row="3" FontWeight="Normal" FontStyle="Normal" Foreground="White" Width="186"></TextBlock>-->
+                    <TextBlock Height="38" FontSize="28" HorizontalAlignment="Left" Margin="98,124,0,0" Name="textBlock9" Text="in collaboration with" VerticalAlignment="Top" Grid.Row="3" />
+                    <HyperlinkButton Height="57" FontSize="32" HorizontalAlignment="Left" Margin="107,54,0,90" Grid.Row="3" Width="231" Content="catpp.in" Click="HyperlinkButton_Click"/>
+                    <Image Height="255" HorizontalAlignment="Left" Margin="108,148,0,0" Name="image2" Stretch="Fill" VerticalAlignment="Top" Width="216" Grid.Row="3" Source="/FinalPro2;component/Images/iw_logo.png" Grid.RowSpan="3" />
+                    <Border BorderBrush="Silver" BorderThickness="2" Height="562" HorizontalAlignment="Left" Margin="-6,-8,0,0" Name="border4" VerticalAlignment="Top" Width="456" Grid.RowSpan="6" />
+                </Grid>
+            </controls:PivotItem>
+           
+        </controls:Pivot>
+    </Grid>
+
+    <!--Sample code showing usage of ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton x:Name="appbar_button1" IconUri="/Images/appbar_button1.png" Text="Button 1"/>
+            <shell:ApplicationBarIconButton x:Name="appbar_button2" IconUri="/Images/appbar_button2.png" Text="Button 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem x:Name="menuItem1" Text="MenuItem 1"/>
+                <shell:ApplicationBarMenuItem x:Name="menuItem2" Text="MenuItem 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+    
+</phone:PhoneApplicationPage>

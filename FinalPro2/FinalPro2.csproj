@@ -1,0 +1,491 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{68FC527C-40E7-4A7D-839C-2326B0DF7F2C}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FinalPro2</RootNamespace>
+    <AssemblyName>FinalPro2</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>FinalPro2.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>FinalPro2.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Controls, Version=7.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Interop" />
+    <Reference Include="system.data.linq" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml" />
+    <Reference Include="mscorlib.extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml.Serialization" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActualTest.xaml.cs">
+      <DependentUpon>ActualTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Article.cs" />
+    <Compile Include="Articles.cs" />
+    <Compile Include="CatAppDataClasses.cs" />
+    <Compile Include="CATNewsPage.xaml.cs">
+      <DependentUpon>CATNewsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DBMover.cs" />
+    <Compile Include="DetailNews.cs" />
+    <Compile Include="Detailnews.xaml.cs">
+      <DependentUpon>Detailnews.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DetailQues.cs" />
+    <Compile Include="Detailques.xaml.cs">
+      <DependentUpon>Detailques.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Helpdocument.xaml.cs">
+      <DependentUpon>Helpdocument.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HelpPage1.xaml.cs">
+      <DependentUpon>HelpPage1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="noque.xaml.cs">
+      <DependentUpon>noque.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="noquecat.xaml.cs">
+      <DependentUpon>noquecat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Opt.xaml.cs">
+      <DependentUpon>Opt.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressDetails.xaml.cs">
+      <DependentUpon>ProgressDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressReport1.xaml.cs">
+      <DependentUpon>ProgressReport1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="que.cs" />
+    <Compile Include="ques.cs" />
+    <Compile Include="QuestionADayPage.xaml.cs">
+      <DependentUpon>QuestionADayPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.xaml.cs">
+      <DependentUpon>Settings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="solcat.xaml.cs">
+      <DependentUpon>solcat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="solopt.xaml.cs">
+      <DependentUpon>solopt.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Solution.xaml.cs">
+      <DependentUpon>Solution.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="solyear.xaml.cs">
+      <DependentUpon>solyear.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StartPage1.xaml.cs">
+      <DependentUpon>StartPage1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TestType.xaml.cs">
+      <DependentUpon>TestType.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TestType1.xaml.cs">
+      <DependentUpon>TestType1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Topper.cs" />
+    <Compile Include="TopperPage.xaml.cs">
+      <DependentUpon>TopperPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Toppers.cs" />
+    <Compile Include="TopperSay.cs" />
+    <Compile Include="ToppersSayPage.xaml.cs">
+      <DependentUpon>ToppersSayPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="ActualTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CATNewsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Detailnews.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Detailques.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Helpdocument.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HelpPage1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="noque.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="noquecat.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Opt.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ProgressDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ProgressReport1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="QuestionADayPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Settings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="solcat.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="solopt.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Solution.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="solyear.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StartPage1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TestType.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TestType1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TopperPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ToppersSayPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FinalPro2_2013_06_08_10_22_28.sap" />
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Images\CATapp.png" />
+    <Resource Include="Images\take.png" />
+    <Resource Include="Images\take1.png" />
+    <Resource Include="Images\take3.png" />
+    <Resource Include="Images\take4.png" />
+    <Resource Include="Images\take5.png" />
+    <Resource Include="Images\take6.png" />
+    <Resource Include="Images\iw1.png" />
+    <Resource Include="Images\news_blue.png" />
+    <Resource Include="Images\news.png" />
+    <Resource Include="Images\about.png" />
+    <Resource Include="Images\about_blue.png" />
+    <Resource Include="Images\home.png" />
+    <Resource Include="Images\home_action.png" />
+    <Resource Include="Images\home_blue.png" />
+    <Resource Include="Images\queaday.png" />
+    <Resource Include="Images\queaday_blue.png" />
+    <Resource Include="Images\toppersay.png" />
+    <Resource Include="Images\toppersay_blue.png" />
+    <Resource Include="Images\attempt_list_blue.png" />
+    <Resource Include="Images\attempt_list_grey.png" />
+    <Resource Include="Images\category.png" />
+    <Resource Include="Images\category_blue.png" />
+    <Resource Include="Images\help_doc_blue.png" />
+    <Resource Include="Images\help_doc_grey.png" />
+    <Resource Include="Images\help_vid_blue.png" />
+    <Resource Include="Images\help_vid_grey.png" />
+    <Resource Include="Images\hint.png" />
+    <Resource Include="Images\hint_blue.png" />
+    <Resource Include="Images\icon.png" />
+    <Resource Include="Images\ic_action_submit.png" />
+    <Resource Include="Images\ic_action_submit_grey.png" />
+    <Resource Include="Images\ic_menu_search.png" />
+    <Resource Include="Images\ic_stat_notify.png" />
+    <Resource Include="Images\lockans32.png" />
+    <Resource Include="Images\question.png" />
+    <Resource Include="Images\question_blue.png" />
+    <Resource Include="Images\solution_tab.png" />
+    <Resource Include="Images\solution_tab_blue.png" />
+    <Resource Include="Images\summary_blue.png" />
+    <Resource Include="Images\summary_grey.png" />
+    <Resource Include="Images\attempted.png" />
+    <Resource Include="Images\attempted_marked.png" />
+    <Resource Include="Images\edit_item_selected.png" />
+    <Resource Include="Images\ic_action_search.png" />
+    <Resource Include="Images\notattempted.png" />
+    <Resource Include="Images\notattempted_marked.png" />
+    <Resource Include="Images\store_active.png" />
+    <Resource Include="Images\store_default.png" />
+    <Resource Include="Images\submit.png" />
+    <Resource Include="Images\submit_white.png" />
+    <Resource Include="Images\wait.png" />
+    <Resource Include="Images\accept.png" />
+    <Resource Include="Images\catapplogo.png" />
+    <Resource Include="Images\catapplogoabout.png" />
+    <Resource Include="Images\catapplogosplash.png" />
+    <Resource Include="Images\cloud.png" />
+    <Resource Include="Images\darklining_bg.png" />
+    <Resource Include="Images\defaultlogo.png" />
+    <Resource Include="Images\device.png" />
+    <Resource Include="Images\device_h.png" />
+    <Resource Include="Images\existing_user.png" />
+    <Resource Include="Images\handmadepaper.png" />
+    <Resource Include="Images\helpvideo.png" />
+    <Resource Include="Images\help_blue.png" />
+    <Resource Include="Images\help_grey.png" />
+    <Resource Include="Images\help_video_image.png" />
+    <Resource Include="Images\highlight_lining_bg.png" />
+    <Resource Include="Images\ic_menu_moreoverflow_normal_holo_light.png" />
+    <Resource Include="Images\ic_popup_sync_1.png" />
+    <Resource Include="Images\iwlogorbg.png" />
+    <Resource Include="Images\iw_logo.png" />
+    <Resource Include="Images\likefb_blue.png" />
+    <Resource Include="Images\likefb_grey.png" />
+    <Resource Include="Images\lining_bg.png" />
+    <Resource Include="Images\loading.gif" />
+    <Resource Include="Images\lockans.png" />
+    <Resource Include="Images\mark_for_analysis.png" />
+    <Resource Include="Images\navigation_collapse.png" />
+    <Resource Include="Images\navigation_expand.png" />
+    <Resource Include="Images\new_user.png" />
+    <Resource Include="Images\nextque.png" />
+    <Resource Include="Images\nonhighlight_lining_bg.png" />
+    <Resource Include="Images\prevque.png" />
+    <Resource Include="Images\progress_blue.png" />
+    <Resource Include="Images\progress_grey.png" />
+    <Resource Include="Images\questionmark.png" />
+    <Resource Include="Images\setting_blue.png" />
+    <Resource Include="Images\setting_grey.png" />
+    <Resource Include="Images\shopping_blue.png" />
+    <Resource Include="Images\shopping_grey.png" />
+    <Resource Include="Images\smallstar.png" />
+    <Resource Include="Images\smallstar_empty.png" />
+    <Resource Include="Images\social_share.png" />
+    <Resource Include="Images\solution_blue.png" />
+    <Resource Include="Images\solution_grey.png" />
+    <Resource Include="Images\sort_ascending.png" />
+    <Resource Include="Images\sort_descending.png" />
+    <Resource Include="Images\star.png" />
+    <Resource Include="Images\star_empty.png" />
+    <Resource Include="Images\store_orange.png" />
+    <Resource Include="Images\take_test_black.png" />
+    <Resource Include="Images\take_test_blue.png" />
+    <Resource Include="Images\take_test_grey.png" />
+    <Resource Include="Images\unmark_for_analysis.png" />
+    <Resource Include="Images\year.png" />
+    <Resource Include="Images\year_blue.png" />
+    <Content Include="catappdb.sdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="help.htm" />
+    <Resource Include="CAT1994_A2-3.PNG" />
+    <Resource Include="CAT1994_A48.PNG" />
+    <Resource Include="CAT1994_A49.PNG" />
+    <Resource Include="CAT1994_A6.PNG" />
+    <Resource Include="CAT1994_Q1.PNG" />
+    <Resource Include="CAT1994_Q2-3.PNG" />
+    <Resource Include="CAT1994_Q5.PNG" />
+    <Resource Include="CAT1995_A11.PNG" />
+    <Resource Include="CAT1995_Q3.PNG" />
+    <Resource Include="CAT1995_Q4.PNG" />
+    <Resource Include="CAT1996_A8.PNG" />
+    <Resource Include="CAT1996_Q3.PNG" />
+    <Resource Include="CAT1997_Q1-3.PNG" />
+    <Resource Include="CAT1998_Q3.PNG" />
+    <Resource Include="CAT1998_Q7.PNG" />
+    <Resource Include="CAT1999_A11.PNG" />
+    <Resource Include="CAT1999_A14.PNG" />
+    <Resource Include="CAT1999_A16.PNG" />
+    <Resource Include="CAT1999_Q13.PNG" />
+    <Resource Include="CAT1999_Q26-27.PNG" />
+    <Resource Include="CAT1999_Q32-33.PNG" />
+    <Resource Include="CAT1999_Q44-46.PNG" />
+    <Resource Include="CAT1999_Q47-48.PNG" />
+    <Resource Include="CAT2000_A25.PNG" />
+    <Resource Include="CAT2000_A26.PNG" />
+    <Resource Include="CAT2000_A44.PNG" />
+    <Resource Include="CAT2000_A8.PNG" />
+    <Resource Include="CAT2000_Q16.PNG" />
+    <Resource Include="CAT2000_Q2.PNG" />
+    <Resource Include="CAT2000_Q27.PNG" />
+    <Resource Include="CAT2000_Q28.PNG" />
+    <Resource Include="CAT2000_Q29.PNG" />
+    <Resource Include="CAT2000_Q47.PNG" />
+    <Resource Include="CAT2001_A16.PNG" />
+    <Resource Include="CAT2001_A2.PNG" />
+    <Resource Include="CAT2001_A23.PNG" />
+    <Resource Include="CAT2001_A29.PNG" />
+    <Resource Include="CAT2001_A7.PNG" />
+    <Resource Include="CAT2001_Q23.PNG" />
+    <Resource Include="CAT2001_Q34.PNG" />
+    <Resource Include="CAT2001_Q40.PNG" />
+    <Resource Include="CAT2001_Q47.PNG" />
+    <Resource Include="CAT2001_Q49-50.PNG" />
+    <Resource Include="CAT2001_Q8.PNG" />
+    <Resource Include="CAT2002_A24.PNG" />
+    <Resource Include="CAT2002_A32.PNG" />
+    <Resource Include="CAT2002_A34.PNG" />
+    <Resource Include="CAT2002_A4.PNG" />
+    <Resource Include="CAT2002_Q21.PNG" />
+    <Resource Include="CAT2002_Q38-39.PNG" />
+    <Resource Include="CAT2002_Q8.PNG" />
+    <Resource Include="CAT2003R_A21.PNG" />
+    <Resource Include="CAT2003R_A36.PNG" />
+    <Resource Include="CAT2003R_A5.PNG" />
+    <Resource Include="CAT2003R_A6.PNG" />
+    <Resource Include="CAT2003R_A8.PNG" />
+    <Resource Include="CAT2003R_Q13.PNG" />
+    <Resource Include="CAT2003R_Q14.PNG" />
+    <Resource Include="CAT2003R_Q16-18.PNG" />
+    <Resource Include="CAT2003R_Q29-31.PNG" />
+    <Resource Include="CAT2003R_Q35.PNG" />
+    <Resource Include="CAT2003R_Q37.PNG" />
+    <Resource Include="CAT2003R_Q42.PNG" />
+    <Resource Include="CAT2003R_Q45.PNG" />
+    <Resource Include="CAT2003_A11-13.PNG" />
+    <Resource Include="CAT2003_A23.PNG" />
+    <Resource Include="CAT2003_A25.PNG" />
+    <Resource Include="CAT2003_A3-4.PNG" />
+    <Resource Include="CAT2003_A30.PNG" />
+    <Resource Include="CAT2003_A35.PNG" />
+    <Resource Include="CAT2003_A42.PNG" />
+    <Resource Include="CAT2003_Q32.PNG" />
+    <Resource Include="CAT2003_Q33.PNG" />
+    <Resource Include="CAT2003_Q37.PNG" />
+    <Resource Include="CAT2003_Q41.PNG" />
+    <Resource Include="CAT2003_Q42.PNG" />
+    <Resource Include="CAT2003_Q9.PNG" />
+    <Resource Include="CAT2004_A1.PNG" />
+    <Resource Include="CAT2004_Q18-20.PNG" />
+    <Resource Include="CAT2004_Q21.PNG" />
+    <Resource Include="CAT2004_Q22.PNG" />
+    <Resource Include="CAT2004_Q30.PNG" />
+    <Resource Include="CAT2004_Q34.PNG" />
+    <Resource Include="CAT2004_Q35.PNG" />
+    <Resource Include="CAT2005_A17.PNG" />
+    <Resource Include="CAT2005_A21.PNG" />
+    <Resource Include="CAT2005_A24.PNG" />
+    <Resource Include="CAT2005_A3.PNG" />
+    <Resource Include="CAT2005_A4.PNG" />
+    <Resource Include="CAT2005_A9.PNG" />
+    <Resource Include="CAT2005_Q22.PNG" />
+    <Resource Include="CAT2005_Q23.PNG" />
+    <Resource Include="CAT2006_A11-12.PNG" />
+    <Resource Include="CAT2006_A23.PNG" />
+    <Resource Include="CAT2006_A6.PNG" />
+    <Resource Include="CAT2006_A7.PNG" />
+    <Resource Include="CAT2006_Q11-12.PNG" />
+    <Resource Include="CAT2007_Q11-12.PNG" />
+    <Resource Include="CAT2008_A15.PNG" />
+    <Resource Include="CAT2008_A21.PNG" />
+    <Resource Include="CAT2008_A22.PNG" />
+    <Resource Include="CAT2008_A25.PNG" />
+    <Resource Include="CAT2008_A9-10.PNG" />
+    <Resource Include="CAT2008_Q9-10.PNG" />
+    <Resource Include="Images\Copy of CAT1994_A2-3.PNG" />
+    <Resource Include="Images\Copy %282%29 of CAT1994_A2-3.PNG" />
+    <Content Include="SplashScreenImage.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>
